@@ -13,6 +13,8 @@
 		34040D6F2925C065008DDCBB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 34040D6D2925C065008DDCBB /* Main.storyboard */; };
 		34040D712925C067008DDCBB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 34040D702925C067008DDCBB /* Assets.xcassets */; };
 		34040D742925C067008DDCBB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 34040D722925C067008DDCBB /* LaunchScreen.storyboard */; };
+		34040D7F2925C224008DDCBB /* Game.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34040D7E2925C224008DDCBB /* Game.swift */; };
+		34040D822925D48B008DDCBB /* Second.xib in Resources */ = {isa = PBXBuildFile; fileRef = 34040D802925D48B008DDCBB /* Second.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +26,9 @@
 		34040D702925C067008DDCBB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		34040D732925C067008DDCBB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		34040D752925C067008DDCBB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		34040D7D2925C183008DDCBB /* testPlayground.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = testPlayground.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
+		34040D7E2925C224008DDCBB /* Game.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Game.swift; sourceTree = "<group>"; };
+		34040D812925D48B008DDCBB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = rockPaperScissors/Base.lproj/Second.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,8 +66,11 @@
 				34040D6B2925C065008DDCBB /* ViewController.swift */,
 				34040D6D2925C065008DDCBB /* Main.storyboard */,
 				34040D702925C067008DDCBB /* Assets.xcassets */,
+				34040D802925D48B008DDCBB /* Second.xib */,
 				34040D722925C067008DDCBB /* LaunchScreen.storyboard */,
 				34040D752925C067008DDCBB /* Info.plist */,
+				34040D7D2925C183008DDCBB /* testPlayground.playground */,
+				34040D7E2925C224008DDCBB /* Game.swift */,
 			);
 			path = rockPaperScissors;
 			sourceTree = "<group>";
@@ -128,6 +136,7 @@
 				34040D742925C067008DDCBB /* LaunchScreen.storyboard in Resources */,
 				34040D712925C067008DDCBB /* Assets.xcassets in Resources */,
 				34040D6F2925C065008DDCBB /* Main.storyboard in Resources */,
+				34040D822925D48B008DDCBB /* Second.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -141,6 +150,7 @@
 				34040D6C2925C065008DDCBB /* ViewController.swift in Sources */,
 				34040D682925C065008DDCBB /* AppDelegate.swift in Sources */,
 				34040D6A2925C065008DDCBB /* SceneDelegate.swift in Sources */,
+				34040D7F2925C224008DDCBB /* Game.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -161,6 +171,14 @@
 				34040D732925C067008DDCBB /* Base */,
 			);
 			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		34040D802925D48B008DDCBB /* Second.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				34040D812925D48B008DDCBB /* Base */,
+			);
+			name = Second.xib;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -290,8 +308,10 @@
 				DEVELOPMENT_TEAM = N7ECN3JBCB;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = rockPaperScissors/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = RPS;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.arcade-games";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
-				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen.storyboard;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
@@ -318,8 +338,10 @@
 				DEVELOPMENT_TEAM = N7ECN3JBCB;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = rockPaperScissors/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = RPS;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.arcade-games";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
-				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen.storyboard;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";

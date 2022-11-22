@@ -19,31 +19,23 @@ class ViewController: UIViewController {
     @IBAction func scissorsButton(_ sender: UIButton) {
        outputField.text=run(input: "scissors")
         a1.text="Player: "+String(playerScore)
-        print("Player: ",playerScore)
         a2.text="AI: "+String(aiScore)
-            print("AI: ",aiScore)
-        if (playerScore>9)||(aiScore>9) {
-            b1.text=("Player favorite: "+playerFavorite())
-            b2.text=("AI favorite: "+aiFavorite())
-        }
+            b1.text=(String(playerR)+"|"+String(playerP)+"|"+String(playerS))
+            b2.text=(String(aiR)+"|"+String(aiP)+"|"+String(aiS))
    }
     @IBAction func paperButton(_ sender: UIButton) {
         outputField.text=run(input: "paper")
         a1.text="Player: "+String(playerScore)
         a2.text="AI: "+String(aiScore)
-        if (playerScore>9)||(aiScore>9) {
-            b1.text=("Player favorite: "+playerFavorite())
-            b2.text=("AI favorite: "+aiFavorite())
-        }
+            b1.text=(String(playerR)+"|"+String(playerP)+"|"+String(playerS))
+            b2.text=(String(aiR)+"|"+String(aiP)+"|"+String(aiS))
     }
     @IBAction func rockButton(_ sender: UIButton) {
       outputField.text=run(input: "rock")
         a1.text="Player: "+String(playerScore)
         a2.text="AI: "+String(aiScore)
-        if (playerScore>9)||(aiScore>9) {
-            b1.text=("Player favorite: "+playerFavorite())
-            b2.text=("AI favorite: "+aiFavorite())
-        }
+            b1.text=(String(playerR)+"|"+String(playerP)+"|"+String(playerS))
+            b2.text=(String(aiR)+"|"+String(aiP)+"|"+String(aiS))
     }
     
 
